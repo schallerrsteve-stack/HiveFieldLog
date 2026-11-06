@@ -20,7 +20,15 @@ Open the same address in Chrome or Edge on a PC. On screens wider than about 100
 - **Review:** set each hole to Draft, Checked or Final on its Info tab. **Final** locks the hole on every device until someone reopens it. The edit history shows who changed what.
 - **Wells:** monitoring wells (or any hole with "+ Add well construction") have a Well tab for stick-up, screen, sand pack and seal. The well is drawn on the log and on the fence diagram.
 - **Fence diagram:** a cross-section through the holes you choose and order. It uses distances from the hole coordinates and elevations from ground elevation, and correlates layer groups between holes. Download as an 11 × 17 or Letter PDF.
-- **Site plan:** hole locations plotted from GPS or easting/northing, with a north arrow, scale bar and the fence section line. Download as PDF.
+- **Site plan:** hole locations plotted from GPS or easting/northing, with a north arrow, scale bar, the fence section line and, optionally, groundwater contours and flow direction. Download as PDF.
+
+## Water levels and groundwater
+- **On the logs:** the header shows two water levels. **Water (ATD)** is the latest reading taken at the time of drilling (during drilling, seepage or on completion). **Static water level** is the latest "Later reading", with the date and time you entered. Both appear in the default company template header and can be moved or removed under Log layout.
+- **Contours and gradient:** the site plan and the 3D model have a **Groundwater** panel. Choose the readings to use: the latest static level per hole, static levels from one monitoring date, or ATD. Each hole needs a ground elevation, and at least 3 wells must not lie in a straight line.
+  - **Gradient and flow direction** come from a least-squares best-fit plane through the water elevations (with exactly 3 wells this is the classic three-point solution). The panel shows i (m/m or ft/ft), the flow bearing from grid north, the fit (R²) and each well's residual.
+  - **Contours** are triangulated between the wells by default, so they are not drawn outside the area the wells cover. You can also choose the best-fit plane, which draws straight, parallel contours across the whole plan. The interval is automatic unless you enter one.
+  - **On the site plan PDF** you get the contours with labels, the groundwater elevation (WL) beside each well, a flow arrow with the gradient, and a summary line. **In 3D** the water surface passes through every reading, with contours and a flow arrow drawn on it.
+  - The settings are saved with the project and sync to other devices.
 
 ## Company template (customization)
 Settings → **Company template** sets the standards everyone uses:

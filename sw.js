@@ -1,5 +1,5 @@
 // FieldLog service worker: keeps the app available offline.
-const CACHE = 'fieldlog-v8';
+const CACHE = 'fieldlog-v9';
 const FILES = ['./', './index.html', './manifest.webmanifest', './icon-192.png', './icon-512.png', './fieldlog-config.json', './fieldlog-3d.js'];
 // Add files one by one so a missing optional file (fieldlog-config.json) doesn't block installation.
 self.addEventListener('install', e => { e.waitUntil(caches.open(CACHE).then(c => Promise.all(FILES.map(f => c.add(f).catch(() => {}))))); self.skipWaiting(); });
