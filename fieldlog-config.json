@@ -1,0 +1,6 @@
+{
+ "supabaseUrl": "",
+ "supabaseKey": "",
+ "enableArcgis": false,
+ "arcgisApiKey": ""
+}
