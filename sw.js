@@ -1,5 +1,5 @@
 // FieldLog service worker: keeps the app available offline.
-const CACHE = 'fieldlog-v0.9.3';
+const CACHE = 'fieldlog-v0.9.5';
 const FILES = ['./', './index.html', './manifest.webmanifest', './icon-192.png', './icon-512.png', './fieldlog-config.json', './fieldlog-3d.js'];
 // Add files one by one so a missing optional file (fieldlog-config.json) doesn't block installation.
 // cache: 'reload' skips the browser's HTTP cache, so a new version never re-caches the old files.
