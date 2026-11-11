@@ -1,5 +1,5 @@
 // FieldLog service worker: keeps the app available offline.
-const CACHE = 'fieldlog-v0.10.4';
+const CACHE = 'fieldlog-v0.10.5';
 const TILES = 'fieldlog-map-tiles'; // NRCan base map tiles already viewed, kept for use offline
 const FILES = ['./', './index.html', './manifest.webmanifest', './icon-192.png', './icon-512.png', './fieldlog-config.json', './fieldlog-3d.js'];
 // Add files one by one so a missing optional file (fieldlog-config.json) doesn't block installation.
