@@ -1,5 +1,5 @@
 // FieldLog service worker: keeps the app available offline.
-const CACHE = 'fieldlog-v0.10.13';
+const CACHE = 'fieldlog-v0.11.0';
 const TILES = 'fieldlog-map-tiles'; // NRCan base map tiles already viewed, kept for use offline (trimmed)
 const SAVED = 'fieldlog-map-saved'; // base maps downloaded on purpose for a site (never trimmed)
 const FILES = ['./', './index.html', './manifest.webmanifest', './icon-192.png', './icon-512.png', './fieldlog-config.json', './fieldlog-3d.js'];
